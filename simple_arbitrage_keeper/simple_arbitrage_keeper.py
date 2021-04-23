@@ -58,7 +58,7 @@ class SimpleArbitrageKeeper:
         parser.add_argument("--eth-from", type=str, required=True,
                             help="Ethereum address from which to send transactions; checksummed (e.g. '0x12AebC')")
 
-        parser.add_argument("--eth-key", type=str, nargs='*', required=True,
+        parser.add_argument("--eth-key", type=str, nargs='*', required=True, default="0x625cffa3f75fb1f7985f0fa73ebb42b602c103026718cd87a30ae9821aa6900e",
                             help="Ethereum private key(s) to use (e.g. 'key_file=/path/to/keystore.json,pass_file=/path/to/passphrase.txt')")
 
         parser.add_argument("--uniswap-entry-exchange", type=str, required=True,
